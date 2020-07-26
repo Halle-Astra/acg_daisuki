@@ -27,7 +27,7 @@ play_text = play_m.outerHTML.match(`(?<=(src="music/)).*(?=(">))`)[0];//终于�
 // console.log(play_text);
 // now_order = 
 order = ms.indexOf(play_text);
-console.log(order);
+// console.log(order);
 }
 
 function playthis(obj){
@@ -37,11 +37,13 @@ function playthis(obj){
 	oA = document.getElementById("mask");
 	oA.innerHTML = `<audio id="music" autoplay="autoplay" src="music/`+mname+`.mp3">`;
 	update_order();
+	end_next_ensure();
 }
 
 function play_byName(name){
 	oA = document.getElementById("mask");
 	oA.innerHTML = `<audio id="music" autoplay="autoplay" src="music/`+name+`">`;
+	end_next_ensure();
 }
 
 function prev(){
@@ -60,7 +62,9 @@ function next(){
 	play_byName(ms[order]);
 }
 
-var play_m = document.getElementById("music");
-play_m.addEventListener('ended', function () {  
+function end_next_ensure(){//否则可能出现没法自动下一首的情况；
+	var play_m = document.getElementById("music");
+	play_m.addEventListener('ended', function () {  
         next();
     }, false);
+	}
