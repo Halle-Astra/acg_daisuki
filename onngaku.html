@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div id = "all">
+		<div class = 'menu'>
+			<img src = "img/cry.jpg" style="width:100%;height:100%;opacity:80%;">
+			<ul class = 'ul_menu'>
+				<li class="li_menu">
+					<p>三輪学 - June Song</p>
+				</li>
+				<li class="li_menu">
+					<p>三輪学 - ちる はな さくら ~ピアノバージョン~</p>
+				</li>
+				<li class="li_menu">
+					<p>三輪学 - ヨスガノソラ メインテーマ -願い-</p>
+				</li>
+				<li class="li_menu">
+					<p>三輪学 - 寂しい夜</p>
+				</li>
+				<li class="li_menu">
+					<p>三輪学 - 降り続く雨の街で</p>
+				</li>
+				<li class="li_menu">
+					<p>三輪学 - 素直と不器用と意地っ張り</p>
+				</li>
+				<li class="li_menu">
+					<p>三輪学 - 星の滴</p>
+				</li>
+				<li class="li_menu">
+					<p>三月のパンタシア - ブラックボードイレイザー</p>
+				</li>
+				<li class="li_menu">
+					<p>三月のパンタシア - 群青世界</p>
+				</li>
+				<li class="li_menu">
+					<p>森保しほ - 幸せのオトシモノ (一ノ瀬 ほとりVer.)	</p>
+				</li>
+				<li class="li_menu">
+					<p>山本美禰子 - 輪廻</p>
+				</li>
+			</ul>
+		</div>
+		<div class = 'pic'>
+			<div class="imiji">
+			<!-- <img class="cry" src="img/imgs/imiji_bg.png"> -->
+			<h1 class="cry" style="color:white;opacity: 70%;position: absolute;top:5%;left:5%;">壁纸精选</h1>
+			<div id= "div_chisaki_banner">	
+				<ul class = "ul_banner">
+					
+				</ul>
+			</div>
+			</div>
+		</div>
+		<div class = 'player'>
+			<div id = "mask"><audio id="music" autoplay="autoplay" src="music/三輪学 - June Song.mp3"></audio></div>
+			<ul id = 'ul_func'>
+				<li class = 'func_li'><img onclick = "prev()" src="img/prev.png" alt=""></li>
+				<li class = 'func_li'><img onclick = "playMusic()" src="img/pause.png" alt=""></li>
+				<li class = 'func_li'><img onclick = "next()" src="img/next.png" alt=""></li>
+			</ul>
+		</div>
+		</div>
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<link href = "css/onngaku.css" type = "text/css" rel = 'stylesheet'>
+	<script src="js/onngaku.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/banner.js" type="text/javascript" charset="utf-8"></script>
+	<link href = "css/imiji.css" type = "text/css" rel = 'stylesheet'>
+	<script type="text/javascript">
+		window.onload = function(){
+			musicE = document.getElementById("music");
+			// musicE.volume=0.10;
+			};
+		function playMusic(){
+			if(document.getElementById('music').paused){
+				document.getElementById('music').play();
+			}else{
+				document.getElementById('music').pause();
+			}
+		}
+	</script>
+</html>

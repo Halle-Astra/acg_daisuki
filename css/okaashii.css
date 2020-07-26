@@ -1,0 +1,56 @@
+*{margin:0;padding:0;}
+
+div.imiji{
+	width:100%;
+	height:100%;
+	position: absolute;
+	background:url(../img/imgs_imiji/imiji_bg.png) no-repeat;
+	background-size: cover;
+}
+
+.hover_scale_class{
+	animation: scale2onepfive 2s both linear;
+}
+
+div#div_chisaki_banner{
+	/* top:25%; */
+	/* width:80%;
+	height:25%; */
+	width:40%;
+	height:80%;
+	top:10%;
+	left:30%;
+	position: absolute;
+	overflow:hidden;
+}
+
+.ul_banner{
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	position: absolute;
+}
+.li_banner{
+	width:100%;
+	height:100%;
+	list-style:none;
+	float:left;
+	/* margin-top:0px; */
+}
+
+
+
+.chisaki_img{
+	width:100%;
+	position:absolute;
+}
+
+@keyframes scale2onepfive{
+	from{
+		transform: scale(1);
+	}
+	to{
+		transform: scale(1.5);
+	}
+}

@@ -1,0 +1,105 @@
+*{margin: 0;padding: 0;}
+body{
+	background: url(../img/navi_bg.jpg) no-repeat;
+	background-size:cover;
+	overflow: hidden;
+}
+
+/* #outermost{
+	background: url(../img/navi_bg.jpg) no-repeat;
+	background-size:cover;
+	display: block;
+	/* overflow:hidden; 
+	position: relative;
+/* } */
+
+#all_navi{
+	height:800px;
+	width:800px;
+	margin:auto auto;
+	position:absolute;
+	animation: rotate_navi 20s linear infinite;
+}
+
+@keyframes rotate_navi{
+	from {
+		transform:  rotateZ(0deg);
+	}
+	to{
+		transform:  rotateZ(360deg);
+	}
+}
+
+.navi{
+	width:100px;
+	height:100px;
+	border-radius: 50px;
+	background-color: red;
+	position:absolute;
+	display:none;
+	/* margin:20px; */
+	/*这行测试用left:calc(50% - 50px);/*加减号两头一定要有空格 */
+}
+
+.navi:hover{
+	animation: scale2onepfive 1s both ;
+}
+
+.navi>a{
+	width:100%;
+	height:100%;
+	text-decoration: none;
+}
+
+.navi>p{
+	position: absolute;
+	width:50%;
+	height:50%;
+	margin:25%;
+}
+
+#imiji_navi{
+	background: url(../img/imiji.jpg);
+	background-size:cover;
+	color:white;
+	text-align:center;
+	line-height:50px;
+	font-size:20px;
+}
+#onngaku_navi{
+	background: url(../img/onngaku.jpg);
+	background-size:cover;
+	color:white;
+	text-align:center;
+	line-height:50px;
+	font-size:20px;
+}
+#bennkyo_navi{
+	background: url(../img/bennkyo.jpg);
+	background-size:cover;
+	color:white;
+	text-align:center;
+	line-height:50px;
+	font-size:20px;
+}
+
+#okaashii_navi{
+	background: url(../img/okaashii.png);
+	background-size:cover;
+	color:white;
+}
+
+#gal_navi{
+	background: url(../img/gal.png);
+	background-size:cover;
+	color:white;
+}
+
+@keyframes scale2onepfive{
+	from{
+		transform: scale(1);
+	}
+	to{
+		transform: scale(1.5);
+	}
+}

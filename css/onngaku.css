@@ -1,0 +1,99 @@
+*{margin:0;padding:0}
+
+html,body,#all{
+	height:100%;
+	width:100%;
+	/* height:900px; */
+	position: relative;	
+	overflow:  hidden;
+	/* background-color: pink; */
+	 /* background: url(../img/onngaku_bg.png) no-repeat; */
+	/* background-size: cover; */
+	/* opacity: 10%; */
+}
+
+.menu{
+	position: absolute;
+	width:35%;
+	height:100%;
+	float:left;
+	/* background-color: red; */
+	/* background:url(../img/cry.jpg) no-repeat; */
+	/* background-size:cover; */
+	margin:0;
+}
+
+.pic{
+	position: absolute;
+	width:65%;
+	height:100%;
+	left:35%;
+	float:right;
+	background-color: blue;
+	margin:0;
+}
+
+.player{
+	height:5%;
+	width:20%;
+	bottom:-3%;/*最后再改回-3*/
+	left:40%;
+	opacity: 40%;
+	position:absolute;
+	/* background-color: white; */
+	transition: all 1s;
+	/* opacity: 70%; */
+}
+
+.player:hover{
+	bottom:0%;
+	opacity: 100%;
+}
+
+#mask{
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	border-radius: 50px;
+	background-color: white;
+	/* opacity: 40%; */
+}
+
+.ul_menu{
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:5%;
+}
+
+.li_menu{
+	margin:20px;
+	list-style: none;
+	
+}
+
+.li_menu>p{
+	font-size: 25px;
+	color: white;
+}
+
+#ul_func{
+	width:100%;
+	height:100%;
+	position: absolute;
+	left:0;
+	top:0;
+}
+
+.func_li{
+	width:33.3%;
+	list-style:none;
+	float:left;
+	text-align: center;
+	/* left:3%; */
+}
+
+.func_li>img{
+}

@@ -1,0 +1,246 @@
+*{margin:0;padding:0};
+.text_yuhi{
+	font-size:60px;
+	color:chocolate;
+	border-radius: 3rem;
+	background-color: aliceblue;
+	opacity: 0.7;
+	position: fixed;
+	transform: rotateZ(720deg);
+	animation: text_yuhi_donghua 9s both linear 2s;
+}
+
+.page{
+	position: relative;
+}
+
+
+
+.appear_gradually_class{
+	animation: appear_gradually 0.5s both;
+}
+
+.vanish_gradually_class{
+	animation:vanish_gradually 1s both;
+}
+
+.yuhi_img{
+	top:0;
+	left:0;
+	position:fixed;
+	width:100%;
+	height:100%;	
+}
+
+
+#musicBtn{
+	position:fixed;
+	width: 5%;
+	z-index: 99;
+	right: 5%;
+	top:3%;
+}
+
+.div_content_yuhi{
+	/* 设置时依然要按照旋转前的进行设置 */
+	/* top:45%; */
+	bottom:5%;
+	height:30%;
+	width:90%;
+	left:5%;
+	/* transform: rotateZ(90deg); */
+	border-radius: 3rem;
+	background-color: aliceblue;
+	position: fixed;
+	opacity: 80%;
+}
+
+.text_yuhi_normal{/* 不会消失的那种 */
+	top:0;
+	left:0;
+	color:chocolate;
+	font-size:50px;
+	/* opacity: 70%; */
+	/* background-color: aqua; */
+	margin: 20px 20px;
+}
+
+.text_yuhi{
+	font-size:60px;
+	color:chocolate;
+	border-radius: 3rem;
+	background-color: aliceblue;
+	opacity: 0.7;
+	position: absolute;
+	transform: rotateZ(720deg);
+	animation: text_yuhi_donghua 9s both linear ;
+}
+
+.img_bg{
+	width:100%;
+	height: 100%;
+	opacity: 40%;
+	background-size: cover;
+}
+
+@keyframes text_yuhi_donghua{
+	from{
+		top:200%;
+		left:25%;
+	}
+	25%{
+		/* transform: rotateZ(90deg) ; */
+		top:40%;
+		left:-25%;
+	}
+	75%{
+		/* transform: rotateZ(90deg) ; */
+		top:40%;
+		left:-25%;
+	}
+	to{
+		transform:rotateZ(-90deg);
+		top:-600%;
+	}
+}
+
+.continue_btn{
+	bottom:0;
+	right:0;
+	/* width:100%; */
+	font-size:50px;
+	margin:20px 20px ;
+	/*margin-left:20px;
+	margin-right:20px; */
+	position: absolute;
+	color : purple;
+	animation: shine 4s linear infinite;
+	/* background-color: #0000FF; */
+}
+
+.continue_btn::selection { background:none;}/*取消被选中 的颜色*/
+
+.cry_gif{
+	left: 0;
+	top: 0;
+	width: 20%;
+	height: 20%;
+	position: fixed;
+	/* transform: rotateZ(90deg); */
+	animation: appear_opacity 3s both 1s;
+}
+
+@keyframes text_yuhi_donghua{
+	from{
+		top:200%;
+		left:25%;
+	}
+	25%{
+		transform: rotateZ(90deg) ;
+		top:40%;
+		left:-25%;
+	}
+	75%{
+		transform: rotateZ(90deg) ;
+		top:40%;
+		left:-25%;
+	}
+	to{
+		transform:rotateZ(-90deg);
+		top:-600%;
+	}
+}
+
+@keyframes div_content_yuhi_donghua{//最后停了下来
+	from{
+		top:200%;
+		left:25%;
+	}
+	to{
+		transform: rotateZ(90deg) ;
+		top:40%;
+		left:-25%;
+	}
+}
+
+@keyframes shine{
+	from{opacity: 100%;}
+	50%{opacity: 40%;}
+	to{opacity: 100%;}
+}
+
+@keyframes appear_gradually{
+	from {opacity: 0%;}
+	to{opacity: 100%;}
+}
+
+@keyframes vanish_gradually{
+	from {opacity: 100%;}
+	to{opacity: 0%;}
+}
+
+@keyframes appear_opacity{
+	from {opacity: 0%;}
+	to{opacity: 85%;}
+}
+
+.hidden{
+	display:none;
+}
+
+.appear_opacity_class{
+	animation: appear_opacity 2s both ;
+}
+#flower_pic{
+	/* transform: rotateZ(90deg); */
+}
+
+#div_love{
+	font-size:60px;
+	/* transform: rotateZ(90deg); */
+	/* background-color: lightcyan; */
+	/* border-radius: 2rem; */
+	width:55%;
+	height:80px;
+	position: fixed;
+	opacity: 100%;
+	animation: love_fly  2s linear infinite ;
+}
+
+#love{
+	color:pink;
+	position: fixed;
+	margin:auto auto;
+}
+
+@keyframes love_fly{
+	from {
+		top:40%;
+		left:20%;
+	}
+	25%{
+		top:40%;
+		left:0%;
+	}
+	50%{
+		top:20%;
+		left:0%;
+	}
+	75%{
+		top:20%;
+		left:20%;
+	}
+	to{
+		top:40%;
+		left:20%;
+	}
+}
+
+#h3_marry{
+	width:20%;
+	height:10%;
+	position:fixed;
+	color:plum;
+	bottom:0%;
+	right:0%;
+}

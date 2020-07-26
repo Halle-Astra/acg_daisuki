@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link href = "css/gal.css" type = "text/css" rel = 'stylesheet'>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/gal.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			window.onload = function(){
+				musicE = document.getElementById("music");
+				musicE.volume=0.10;
+				};
+			function playMusic(){
+				if(document.getElementById('music').paused){
+					document.getElementById('music').play();
+				}else{
+					document.getElementById('music').pause();
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<img id="musicBtn" onclick="playMusic()" src="img/musicBtn.png" >
+		<audio id="music" autoplay="autoplay" loop="loop" src="img/Peak A Soul+ - 爱しさあふれて.mp3"></audio>
+		<div class="page " id = "frame"><!-- yuhi_img2只是用于方便go2NextS进行jq查找 --><!-- 35等于30（yuhi_love) -->
+			<img class = "yuhi_img img_yuhi_1" src = "img/yuhi_1.png">
+			<div class = "div_content_yuhi div_yuhi2">
+				<p class = "text_yuhi_normal " ><!-- 晚些再考虑对它做淡入淡出 -->
+				这是我青梅竹马深菜川夕阳，从小一起玩，中间分开了很久，现在因为读书方便，寄住她家，所以又能够在一起玩了。
+				</p>
+				<p onclick="go2NextS(2)" class = "continue_btn"> >>点击此处继续</p>
+			</div>
+			
+			
+		</div>
+		
+	</body>
+	
+</html>

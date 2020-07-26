@@ -4,16 +4,43 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title></title>
+	<link href = "css/acg_daisuki.css" type = "text/css" rel = 'stylesheet'>
+	
     <script type="text/javascript">
     	
-   		document.addEventListener('plusready', function(){
-   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。")
-   			
-   		});
+   		
+		
    		
     </script>
 </head>
 <body>
-	
+	<!-- <div id="outermost"> -->
+	<div style = "position: relative;" id = "all_navi">
+		<!-- <div class="navi" id = 'okaashii_navi' onclick="window.open('./okaashii.html','_self')">
+			<p>おかしいよう</p>
+		</div> -->
+		<div class="navi" id = 'okaashii_navi'><!-- onclick="window.open('./okaashii.html','_self')"> -->
+			<p>おかしいよう</p>
+		</div>
+		<div class="navi" id = "imiji_navi" onclick="window.open('./imiji.html','_self')">
+			<p>画像</p>
+		</div>
+		<div class="navi" id = "onngaku_navi" onclick="window.open('./onngaku.html','_self')">
+			<p>音楽</p>
+		</div>
+		<!-- <div class="navi" id = "bennkyo_navi" onclick="window.open('./bennkyo.html','_self')">
+			<p>勉強</p>
+		</div> -->
+		<div class="navi" id = "bennkyo_navi"> 
+			<p>勉強</p>
+		</div>
+		<div class="navi" id = "gal_navi" onclick="window.open('./gal.html','_self')">
+			<p>ギャルゲーム</p>
+		</div>
+	</div>
+	<!-- </div> -->
 </body>
+<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<!-- jq要先于navi_cycle引入 -->
+<script src="js/navi_cycle.js" type="text/javascript" charset="utf-8"></script>
 </html>
